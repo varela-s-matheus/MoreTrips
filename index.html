@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="/img/sacola.png"/>
+
+    <title>+Trips</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div>
+                <a href="index.html">
+                    <h1>+TRIPS</h1>
+                </a>
+            </div>
+            <div>
+                <a href="src/meus-ingressos.html"><img class="img__ticket" src="../img/sacola.png" alt=""></a>
+                <a type="button" class="btn btn-primary" id="button__modal" data-bs-toggle="modal"
+                data-bs-target="#modal__login">
+                    <span class="img__perfil">
+                        <img src="../img/perfil-f.png" alt="">
+                    </span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="carrosel__imagens">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/Eventos - Baladas/paisagem2.jpg" class="d-block w-100 " alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/Eventos - Baladas/paisagem1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/Imagem principal.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+        
+        <section class="container">
+
+            <section class="container__cards">
+                <a href="src/viagens.html?Aventura">
+                    <div class="container__card" >
+                        <img src="../img/icon/balada.png" alt="">
+                        <h3>AVENTURA</h3>
+                    </div>
+                </a>
+
+                <a href="src/viagens.html?Mochilao">
+                    <div class="container__card" id="color__purple">
+                        <img src="../img/icon/educacao.png" alt="">
+                        <h3>MOCHILÃO</h3>
+                    </div>
+                </a>
+
+                <a href="src/viagens.html?Romantica">
+                    <div class="container__card">
+                        <img src="../img/icon/esporte.png" alt="">
+                        <h3>ROMÂNTICA</h3>
+                    </div>
+                </a>
+
+                <a href="src/viagens.html?Gastronomica">
+                    <div class="container__card" id="color__purple">
+                        <img src="../img/icon/feira.png" alt="">
+                        <h3>GASTRONÔMICA</h3>
+                    </div>
+                </a>
+            </section>
+
+            <section class="container__cards" style="margin-top: 2rem;">
+                <a href="src/viagens.html?Espiritual">
+                    <div class="container__card" id="color__purple">
+                        <img src="../img/icon/show.png" alt="">
+                        <h3>ESPIRITUAL</h3>
+                    </div>
+                </a>
+
+                <a href="src/viagens.html?Intercambio">
+                    <div class="container__card">
+                        <img src="../img/icon/teatro.png" alt="">
+                        <h3>INTERCÂMBIO</h3>
+                    </div>
+                </a>
+                
+                <a href="src/viagens.html?Cultural">
+                    <div class="container__card">
+                        <img src="../img/icon/arraia.png" alt="">
+                        <h3>CULTURAL</h3>
+                    </div>
+                </a>
+
+                <a href="src/viagens.html?Especial">
+                    <div class="container__card" id="color__purple">
+                        <img src="../img/icon/especial.png" alt="">
+                        <h3>ESPECIAL</h3>
+                    </div>
+                </a>
+
+            </section>
+        </section>
+
+    </main>
+
+    <div>
+        <!-- Modal login INICIO -->
+        <div class="modal fade" id="modal__login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <h1 class="modal-title" id="exampleModalLabel">+TRIPS</h1>
+                    <div class="modal-body p-5 pt-0">
+                        <form class="">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control rounded-3" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Senha</label>
+                            </div>
+                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" id="button__login"  type="submit"
+                            onclick="logar(); return false">Entrar</button>
+                                 
+                            <div class="modal__links">
+                                <a type="button" class="btn btn-primary" id="button__modal" data-bs-toggle="modal"
+                                    data-bs-target="#modal__recuperar_senha"><small class="text-muted">Esqueci minha
+                                        senha</small></a>
+                                <a href="./src/cadastro-usuario.html"><small class="text-muted">Ainda não possuo
+                                        cadastro</small></a>
+                            </div>
+                            <hr class="my-0">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal login FINAL -->
+
+        <!-- Modal Esqueci minha senha -->
+
+        <div class="modal fade" id="modal__recuperar_senha" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <h1 class="modal-title" id="exampleModalLabel">+TRIPS</h1>
+                    <div class="modal-body p-5 pt-0">
+                        <form class="">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Confirme seu e-mail</label>
+                            </div>
+                        </form>
+                        <div class="button__center">
+                            <button class="btn btn-primary" data-bs-target="#modal__codigo_verificacao" data-bs-toggle="modal"
+                                type="submit">Enviar</button>
+                        </div>
+                        <div class="modal__links">
+                            <a type="button" class="btn btn-primary" id="button__modal" data-bs-toggle="modal"
+                                data-bs-target="#modal__login">Entrar</a>
+                        </div>
+                        <hr class="my-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal__codigo_verificacao" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <h1 class="modal-title" id="exampleModalLabel">+TRIPS</h1>
+                    <div class="modal-body p-5 pt-0">
+                        <form class="">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="0 0 0 0 0 0">
+                                <label for="floatingInput">Insira o código de verificação</label>
+                            </div>
+                        </form>
+                        <div class="button__center">
+                            <button class="btn btn-primary" data-bs-target="#modal__senha_nova" data-bs-toggle="modal"
+                                type="submit">Enviar</button>
+                        </div>
+                        <div class="modal__links">
+                            <a type="button" class="btn btn-primary" id="button__modal" data-bs-toggle="modal"
+                                data-bs-target="#modal__login">Entrar</a>
+                        </div>
+                        <hr class="my-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal__senha_nova" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header p-5 pb-4 border-bottom-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <h1 class="modal-title" id="exampleModalLabel">+TRIPS</h1>
+                    <div class="modal-body p-5 pt-0">
+                        <form class="">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control rounded-3" id="floatingInput"
+                                    placeholder="name@example.com">
+                                <label for="floatingInput">Nova senha</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control rounded-3" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Confirme nova senha</label>
+                            </div>
+                        </form>
+                        <div class="button__center">
+                            <button class="btn btn-primary" onclick="senhaSalva()" data-bs-toggle="modal"
+                                type="submit">Salvar</button>
+                        </div>
+                        <div class="modal__links">
+                            <a type="button" class="btn btn-primary" id="button__modal" data-bs-toggle="modal"
+                                data-bs-target="#modal__login">Entrar</a>
+                        </div>
+                        <hr class="my-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal esqueci minha senha FINAL -->
+    </div>
+
+    <footer class="footer">
+
+        <div class="header__nav">
+            <a href="index.html">
+                <h1>+TRIPS</h1>
+            </a>
+            <div>
+                <a href=""><img class="social__icon" src="../img/facebook.png" alt=""></a>
+                <a href=""><img class="social__icon" src="../img/instaIcon.png" alt=""></a>
+                <a href=""><img class="social__icon" src="../img/twittIcon.png" alt=""></a>
+            </div>
+        </div>
+        <span>
+            <p>&copy;Copyright 2023 More Trips</p>
+        </span>
+    </footer>
+
+    <script src="../javaScript/main.js"></script>
+    <script type="module" src="./API/evento/eventoDetalhes.js"></script>
+    <script src="./API/usuario/autenticaCliente.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
