@@ -25,13 +25,13 @@ export default function constroiEvento(id, titulo_evento, local_nome, endereco, 
     cabecalhoEvento.innerHTML = `
     <div>
     <div>
-        <img class="img__detalhamento__evento" src="../img/Eventos - Baladas/Fluxo1.jpeg" alt="">
+        <img class="img__detalhamento__evento" src="../../img/Eventos - Baladas/paisagem2.jpg" alt="">
     
         <div class="evento__detalhamento">
             <span>
-                <p>Endereço: ${endereco}, ${numero} - ${bairro}</p>
-                <p>Data do evento: ${data}</p>
-                <p>Local coberto: ${local_coberto}</p>
+                <p>Saida: ${endereco}, ${numero} - ${bairro}</p>
+                <p>Data de saida: ${data}</p>
+                <p>Quantidade de dias: ${local_coberto}</p>
                 
                 <div class="classificacao__evento">
                     <p>${faixa_etaria}</p>
@@ -39,9 +39,9 @@ export default function constroiEvento(id, titulo_evento, local_nome, endereco, 
             </span>
 
             <span>
-                <p>${cidade} - ${estado}</p>
-                <p>Abertura dos portões: ${hora_abertura}</p>
-                <p>Estacionamento: ${estacionamento}</p>
+                <p>Destino: ${titulo_evento}</p>
+                <p>Horário de saida: ${hora_abertura}</p>
+                <p>Valor + Taxas: ${estacionamento}</p>
 
                 <a class="obrigatoriedade" target="_blank" href="https://www.google.com.br/maps"><img src="../img/icon/ponteiro-de-mapa.png" alt="">Ver no mapa</a>
             </span>

@@ -15,7 +15,7 @@ export default function constroiCard(id, data_evento, titulo_evento, local_nome,
 
     const evento = document.createElement("li")
     evento.className = "container__card__evento";
-    evento.innerHTML = `<a href="evento-informacoes.html?${id}"><img src="../../img/Eventos - Baladas/paisagem2.jpg" class="card-img" alt="">
+    evento.innerHTML = `<a href="viagens-informacoes.html?${id}"><img src="../../img/Eventos - Baladas/paisagem2.jpg" class="card-img" alt="">
     <div class="descricao__evento">
         <div class="data__evento">
             <span>

@@ -3,22 +3,22 @@ import mongoose from "mongoose";
 const eventoSchema = new mongoose.Schema(
     {
         id: {type: String},
-        titulo_evento: {type: String, required: true},
-        local_nome: {type: String, required: true},
-        tipo_evento: {type: String, required: true},
-        descricao: {type: String, required: true},
-        cep: {type: String, required: true},
-        endereco: {type: String, required: true},
-        estado: {type: String, required: true},
-        cidade: {type: String, required: true},
-        bairro: {type: String, required: true},
-        numero: {type: Number, required: true},
-        data_evento: {type: Date, required: true},
-        hora_abertura: {type: String, required: true},
-        local_coberto: {type: String, required: true},
-        estacionamento: {type: String, required: true},
-        faixa_etaria: {type: Number, required: true},
-        localizacao: {type: String, required: true}
+        titulo_evento: {type: String},
+        local_nome: {type: String},
+        tipo_evento: {type: String},
+        descricao: {type: String},
+        cep: {type: String},
+        endereco: {type: String},
+        estado: {type: String},
+        cidade: {type: String},
+        bairro: {type: String},
+        numero: {type: Number},
+        data_evento: {type: Date},
+        hora_abertura: {type: String},
+        local_coberto: {type: String},
+        estacionamento: {type: String},
+        faixa_etaria: {type: Number},
+        localizacao: {type: String}
     }
 )
 
