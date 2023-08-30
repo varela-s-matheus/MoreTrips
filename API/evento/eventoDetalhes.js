@@ -30,21 +30,15 @@ export default function constroiEvento(id, titulo_evento, local_nome, endereco, 
     
         <div class="evento__detalhamento">
             <span>
-                <p>Saida: ${endereco}, ${numero} - ${bairro}</p>
-                <p>Data de saida: ${data}</p>
+                <p>Saída: ${endereco}, ${numero} - ${bairro}</p>
+                <p>Data de saída: ${data}</p>
                 <p>Quantidade de dias: ${local_coberto}</p>
-                
-                <div class="classificacao__evento">
-                    <p>${faixa_etaria}</p>
-                </div>
             </span>
 
             <span>
                 <p>Destino: ${titulo_evento}</p>
-                <p>Horário de saida: ${hora_abertura}</p>
-                <p>Valor + Taxas: ${estacionamento}</p>
-
-                <a class="obrigatoriedade" target="_blank" href="https://www.google.com.br/maps"><img src="../img/icon/ponteiro-de-mapa.png" alt="">Ver no mapa</a>
+                <p>Horário de saída: ${hora_abertura}</p>
+                <p>Taxas: ${estacionamento}</p>
             </span>
 
         </div>
@@ -57,9 +51,9 @@ export default function constroiEvento(id, titulo_evento, local_nome, endereco, 
 </div>`
 
 ingresso.innerHTML = `
-<h3 class="obrigatoriedade">Ingressos selecionados</h3>
+<h3 class="obrigatoriedade">Tickets selecionados</h3>
 <ul>
-    <li id="situacaoIngressos">Nenhum ingresso selecionado</li>
+    <li id="situacaoIngressos">Nenhum ticket selecionado</li>
 </ul>`
 modal = document.getElementById("input__ingresso");
 return;
