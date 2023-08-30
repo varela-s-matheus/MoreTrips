@@ -21,6 +21,7 @@ export default function constroiEvento(id, titulo_evento, local_nome, endereco, 
     lugar.innerHTML = `${local_nome}`;
     
 
+
     const cabecalhoEvento = document.getElementById("teste");
     cabecalhoEvento.innerHTML = `
     <div>
